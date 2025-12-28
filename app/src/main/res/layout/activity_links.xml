@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".LinksActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_links"
+        android:contentDescription="Links Icon"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="#FFA000"
+        android:padding="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Links"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#333333" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Manage your important links and connections"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:paddingHorizontal="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="This is the Links activity page.\nMore features coming soon!"
+        android:textSize="14sp"
+        android:textColor="#999999"
+        android:gravity="center"/>
+
+</LinearLayout>

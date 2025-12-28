@@ -15,6 +15,26 @@
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity
+            android:name=".BankingActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".IdeasActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AidActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".LinksActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AddActivityPage"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
             android:name=".LoginPage"
             android:exported="true">
             <intent-filter>
