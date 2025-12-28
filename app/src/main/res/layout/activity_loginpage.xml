@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginPage">
+
+<TextView
+    android:id="@+id/tv_login_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:textSize="32sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="32dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_username"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    app:startIconDrawable="@drawable/ic_person"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="48dp"
+
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_login_title">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:hint="Username"
+        android:inputType="text" />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/til_password"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    app:startIconDrawable="@drawable/ic_lock"
+    app:endIconMode="password_toggle"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/til_username">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="40dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+</com.google.android.material.textfield.TextInputLayout>
+
+
+    <CheckBox
+    android:id="@+id/cb_remember_me"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Remember Me"
+    app:layout_constraintStart_toStartOf="@id/til_password"
+    app:layout_constraintTop_toBottomOf="@id/til_password"
+    android:layout_marginTop="16dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#6200EE"
+        app:icon="@drawable/login_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_cancel"
+        app:layout_constraintTop_toBottomOf="@id/cb_remember_me"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF4081"
+        app:icon="@drawable/cancel_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_login"
+        android:layout_marginStart="8dp" />
+
+
+    <TextView
+    android:id="@+id/tv_forgot_password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Forgot Password?"
+    android:textColor="@android:color/holo_blue_dark"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/btn_login"
+    android:layout_marginTop="32dp" />
+
+    <TextView
+    android:id="@+id/tv_sign_up"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New User? Sign Up"
+    android:textColor="@android:color/holo_blue_dark"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tv_forgot_password"
+    android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
