@@ -40,7 +40,7 @@ class LoginPage : AppCompatActivity() {
                 }
 
 
-            if (username == "Henok" && password == "1234") {
+            if (username == "henok" && password == "1234") {
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
                 // Navigate to Dashboard
