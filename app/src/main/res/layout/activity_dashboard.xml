@@ -170,9 +170,9 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Aid Card -->
+                <!-- Add Card (with plus icon) -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_aid"
+                    android:id="@+id/card_add_plus"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnWeight="1"
@@ -204,7 +204,7 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:layout_gravity="center"
-                                android:contentDescription="Aid"
+                                android:contentDescription="Add"
                                 android:src="@drawable/ic_aid" />
                         </FrameLayout>
 
@@ -212,7 +212,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="16dp"
-                            android:text="Aid"
+                            android:text="Add"
                             android:textColor="#333333"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -290,9 +290,9 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Add Activity Card (Centered, Full Width) -->
+                <!-- Add Card (wifi icon - bottom) -->
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/card_add"
+                    android:id="@+id/card_add_wifi"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_columnSpan="2"

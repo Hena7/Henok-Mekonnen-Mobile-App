@@ -23,7 +23,7 @@
             android:exported="false"
             android:parentActivityName=".DashboardActivity" />
         <activity
-            android:name=".AidActivity"
+            android:name=".AddActivity"
             android:exported="false"
             android:parentActivityName=".DashboardActivity" />
         <activity

@@ -15,9 +15,9 @@ class DashboardActivity : AppCompatActivity() {
 
         val cardBanking = findViewById<CardView>(R.id.card_banking)
         val cardIdeas = findViewById<CardView>(R.id.card_ideas)
-        val cardAid = findViewById<CardView>(R.id.card_aid)
+        val cardAddPlus = findViewById<CardView>(R.id.card_add_plus)
         val cardLinks = findViewById<CardView>(R.id.card_links)
-        val cardAdd = findViewById<CardView>(R.id.card_add)
+        val cardAddWifi = findViewById<CardView>(R.id.card_add_wifi)
 
 
         cardBanking.setOnClickListener {
@@ -32,8 +32,8 @@ class DashboardActivity : AppCompatActivity() {
         }
 
 
-        cardAid.setOnClickListener {
-            val intent = Intent(this, AidActivity::class.java)
+        cardAddPlus.setOnClickListener {
+            val intent = Intent(this, AddActivity::class.java)
             startActivity(intent)
         }
 
@@ -44,7 +44,7 @@ class DashboardActivity : AppCompatActivity() {
         }
 
 
-        cardAdd.setOnClickListener {
+        cardAddWifi.setOnClickListener {
             val intent = Intent(this, AddActivityPage::class.java)
             startActivity(intent)
         }
