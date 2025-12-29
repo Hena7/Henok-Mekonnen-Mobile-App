@@ -43,7 +43,6 @@ class LoginPage : AppCompatActivity() {
             if (username == "henok" && password == "1234") {
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-                // Navigate to Dashboard
                 val intent = Intent(this, DashboardActivity::class.java).also {
                     it.putExtra("USERNAME", username)
                 }

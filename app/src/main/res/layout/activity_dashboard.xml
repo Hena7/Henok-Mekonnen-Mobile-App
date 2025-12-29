@@ -8,7 +8,7 @@
     android:background="#F5F5F5"
     tools:context=".DashboardActivity">
 
-    <!-- Header/Toolbar -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
 
     </LinearLayout>
 
-    <!-- ScrollView for cards -->
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -39,7 +39,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- First Row: Banking and Ideas -->
+
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                 android:columnOrderPreserved="false"
                 android:useDefaultMargins="false">
 
-                <!-- Banking Card -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_banking"
                     android:layout_width="0dp"
@@ -110,7 +110,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Ideas Card -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_ideas"
                     android:layout_width="0dp"
@@ -170,7 +170,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Add Card (with plus icon) -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_add_plus"
                     android:layout_width="0dp"
@@ -230,7 +230,7 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Links Card -->
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_links"
                     android:layout_width="0dp"
@@ -292,7 +292,7 @@
 
             </GridLayout>
 
-            <!-- Add Card (wifi icon - bottom) - Outside GridLayout for reliable rendering -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_add_wifi"
                 android:layout_width="match_parent"

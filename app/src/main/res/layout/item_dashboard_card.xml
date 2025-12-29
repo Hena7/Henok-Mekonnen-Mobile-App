@@ -18,7 +18,6 @@
         android:padding="24dp"
         android:gravity="center">
 
-        <!-- Circular Icon Container -->
         <FrameLayout
             android:id="@+id/icon_container"
             android:layout_width="80dp"
@@ -39,7 +38,6 @@
                 android:contentDescription="Icon" />
         </FrameLayout>
 
-        <!-- Card Title -->
         <TextView
             android:id="@+id/card_title"
             android:layout_width="wrap_content"
@@ -50,7 +48,6 @@
             android:textStyle="bold"
             android:textColor="#333333" />
 
-        <!-- Card Description -->
         <TextView
             android:id="@+id/card_description"
             android:layout_width="wrap_content"
