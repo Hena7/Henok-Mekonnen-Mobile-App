@@ -13,3 +13,33 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Build outputs
+*.apk
+*.aar
+*.dex
+*.so
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+
+# Gradle wrapper
+gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration files
+gradle.properties
